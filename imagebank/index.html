@@ -1,0 +1,1617 @@
+<!--
+plugin version .022.1 
+maintainer:zack
+contact:zacksac@gmail.com
+-->
+<!doctype html>
+<html lang="en-US"><head>
+ <meta charset="utf-8">
+  
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>image bank</title>
+  <link rel="icon" href="http://teamtreehouse.com/assets/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="all" href="css/bootstrap.css">
+  
+  <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+  <script src="minified/jquery1.js"></script>
+  <script src="minified/jquery.gsap.min.js"></script>
+  <script src="minified/TweenLite.min.js"></script>
+  <script src="minified/TweenMax.js"></script>
+  <script src="minified/easing/EasePack.js"></script>
+  <script src="minified/utils/Draggable.min.js"></script>
+  <script src="minified/TimelineMax.js"></script>
+  <script src="minified/plugins/CSSPlugin.min.js"></script>
+  <script src="minified/jquery-ui.js"></script>
+  <script src="minified/ThrowPropsPlugin.min.js"></script>
+  <script src="minified/hammer.js"></script>
+  <script src="minified/jquery.bpopup.js"></script>
+  <script type="text/javascript" language="javascript" charset="utf-8" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" src="js/highlight.pack.js"></script>
+  <script type="text/javascript" src="js/tabifier.js"></script>
+  <script src="js/js.js"></script>
+  <script src="js/jPages.js"></script>
+  
+</head>
+
+<body>
+
+   
+    <header>
+    <div class="container">
+    <div class="row"> 
+    <div class="logo col-sm-4">
+    <div class="row">
+      <a href="#"><img src="images/logo.png" alt=""></a>
+    </div>
+    </div>
+    <div class="social col-sm-8 text-right">
+      <ul class="row">
+        <!--<li><a href="#"><img src="images/social1.png" alt=""></a></li>
+        <li><a href="#"><img src="images/social2.png" alt=""></a></li>
+        <li><a href="#"><img src="images/social5.png" alt=""></a></li>-->
+    
+        <li><input type="button" value="Sign Up" class="sign-up-button"></li>
+        <li><input type="button" value="login" class="login-button"></li>
+      </ul>
+    </div>
+	  </div>
+
+</div>
+    </header>
+
+
+<!-- header close here -->
+
+
+<section class="section1">
+  <div class="container">
+    <div class="row">
+	<h1 class="heading">Shopping List <i class="glyphicon glyphicon-play open"></i></h1>
+      <div class="search-list">
+        <table id="checkoutlist">
+          <tr>
+            <th>Id</th>
+            <th>Status</th>
+            <th>Search list for</th>
+            <th>Type</th>
+          </tr>
+          <tr class="even">
+            <td>1</td>
+            <td>pending</td>
+            <td>demo list</td>
+            <td>photo</td>
+          </tr>
+          <tr class="odd">
+            <td>1</td>
+            <td>pending</td>
+            <td>demo list</td>
+            <td>photo</td>
+          </tr>
+          <tr class="even">
+            <td>1</td>
+            <td>pending</td>
+            <td>demo list</td>
+            <td>photo</td>
+          </tr>
+          <tr class="odd">
+            <td>1</td>
+            <td>pending</td>
+            <td>demo list</td>
+            <td>photo</td>
+          </tr>
+          <tr class="even">
+            <td>1</td>
+            <td>pending</td>
+            <td>demo list</td>
+            <td>photo</td>
+          </tr>
+          <tr class="odd">
+            <td>1</td>
+            <td>pending</td>
+            <td>demo list</td>
+            <td>photo</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- section1 close here -->
+
+
+<section class="section2">
+  <div class="container">
+    <div class="row">
+	  <h1 class="heading">Shopping List <i class="glyphicon glyphicon-play open"></i></h1>
+      <div class="search-box">
+        <input type="text" class="search-for-image" placeholder="Search for Image &quot;Demo&quot;" />
+        <input type="button" value="Search" class="search-butoon" /> 
+      </div>
+    </div>
+  </div>
+</section>
+<!-- section2 close here -->
+
+<section class="section2">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 left-sidebar">
+        <div class="heading-bar">
+          <h1><img src="images/photo.png" alt="">Photos</h1>
+          <ul class="views">
+            <li><a href="#" class="active"><i class="glyphicon glyphicon-th-large"></i></a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-th-list"></i></a></li>
+          </ul>
+        </div>
+        <div id="content" class="defaults">
+
+    
+     
+
+      <!-- item container -->
+      <div id="itemContainer">
+        <div id="product-listing" class="product-listing">
+       
+    
+            
+        </div>
+
+      </div>
+
+    </div> 
+        
+
+<div class="pagination">
+ <!-- navigation holder -->
+      <div class="holder"></div>
+      
+ <!-- Nº of items per page form -->
+      <form class="an-filter">  
+        <select class="an-filters-list">
+          <option class="an-filter-item">6</option>
+          <option class="an-filter-item">12</option>
+          <option class="an-filter-item">18</option>
+        </select>
+      </form>
+</div>
+
+
+
+      </div>
+      <div class="col-sm-4 right-sidebar pull-right">
+        <div class="recyle">
+          <h2><i class="glyphicon glyphicon-trash"></i> Recycle bin</h2>
+          <ul class="recycle-thumb">
+            
+          </ul>
+
+        </div>
+
+        <div class="checkout">
+          <h2> <i class="glyphicon glyphicon-shopping-cart"></i> Checkout</h2>
+          <div class="search-list checkout-table">
+          <table id="checkoutlist">
+          <tr>
+            <th>Id</th>
+            <th>Status</th>
+            <th>Search list for</th>
+          </tr>
+          
+        </table>
+		 <input type="button" value="Clear" class="sidebar-button pull-left" >
+        <input type="button" value="Save" class="sidebar-button pull-right" >
+      </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+     <p class="copyright">Copyright 2000- 2014 @  <span>ImageBankShop</span></p> 
+
+  <ul class="payment">
+    <li><a href="#"><img src="images/payment.png" alt=""></a></li>
+    <li><a href="#"><img src="images/payment2.png" alt=""></a></li>
+    <li><a href="#"><img src="images/payment3.png" alt=""></a></li>
+  </ul>
+      </div>
+  </div>
+</footer>
+<!-- footer close here -->
+
+
+</body>
+</html>
+<script>
+
+
+
+$( document ).ready(function() {
+
+
+var items= 
+{
+    "images": [
+        {
+            "id": "123",
+            "caption": "This Blue beach ball is really cool and was photographed by ...",
+            "title": "Beach Ball",
+            "color_type": "blue",
+            "copyright": "This is some copyright",
+            "date_created": "2014-10-12",
+            "cost": "£30",
+            "display_sizes": [
+                {
+                    "height": 50,
+                    "is_watermarked": false,
+                    "name": "small",
+                    "uri": "img/one.jpg",
+                    "width": 25
+                },
+                {
+                    "height": 100,
+                    "is_watermarked": false,
+                    "name": "medium",
+                    "uri": " http://.....",
+                    "width": 50
+                },
+                {
+                    "height": 200,
+                    "is_watermarked": true,
+                    "name": "medium",
+                    "uri": " http://.....",
+                    "width": 100
+                }
+            ],
+            "keywords": [
+                {
+                    "keyword_id": "1",
+                    "type": "metadata",
+                    "text": "beach"
+                },
+                {
+                    "keyword_id": "2",
+                    "type": "metadata",
+                    "text": "ball"
+                }
+            ],
+            "max_dimensions": {
+                "height": 500,
+                "width": 300
+            },
+            "quality_rank": "1",
+            "additional_info": "Additional Info shows here..."
+        },
+        {
+            "id": "345",
+            "caption": "Red beach ball ...",
+            "title": "Kids Beach Ball",
+            "color_type": "orange",
+            "copyright": "This is some copyright",
+            "cost": "£0",
+            "date_created": "2014-10-12",
+            "display_sizes": [
+                {
+                    "height": 50,
+                    "is_watermarked": false,
+                    "name": "small",
+                    "uri": "img/two.jpg",
+                    "width": 25
+                },
+                {
+                    "height": 100,
+                    "is_watermarked": false,
+                    "name": "medium",
+                    "uri": " http://.....",
+                    "width": 50
+                },
+                {
+                    "height": 200,
+                    "is_watermarked": true,
+                    "name": "medium",
+                    "uri": "http://.....",
+                    "width": 100
+                }
+            ],
+            "keywords": [
+                {
+                    "keyword_id": "1",
+                    "type": "metadata",
+                    "text": "beach"
+                },
+                {
+                    "keyword_id": "2",
+                    "type": "metadata",
+                    "text": "ball"
+                }
+            ],
+            "max_dimensions": {
+                "height": 500,
+                "width": 300
+            },
+            "quality_rank": "1",
+            "additional_info": "Additional Info shows here..."
+        }
+        ,
+         {
+            "id": "346",
+            "caption": "Red beach ball ...",
+            "title": "Kids Beach Ball",
+            "color_type": "orange",
+            "copyright": "This is some copyright",
+            "cost": "£0",
+            "date_created": "2014-10-12",
+            "display_sizes": [
+                {
+                    "height": 50,
+                    "is_watermarked": false,
+                    "name": "small",
+                    "uri": "img/Tulips.jpg",
+                    "width": 25
+                },
+                {
+                    "height": 100,
+                    "is_watermarked": false,
+                    "name": "medium",
+                    "uri": " http://.....",
+                    "width": 50
+                },
+                {
+                    "height": 200,
+                    "is_watermarked": true,
+                    "name": "medium",
+                    "uri": "http://.....",
+                    "width": 100
+                }
+            ],
+            "keywords": [
+                {
+                    "keyword_id": "1",
+                    "type": "metadata",
+                    "text": "beach"
+                },
+                {
+                    "keyword_id": "2",
+                    "type": "metadata",
+                    "text": "ball"
+                }
+            ],
+            "max_dimensions": {
+                "height": 500,
+                "width": 300
+            },
+            "quality_rank": "1",
+            "additional_info": "Additional Info shows here..."
+        },
+        {
+            "id": "242",
+            "caption": "Red beach ball ...",
+            "title": "Kids Beach Ball",
+            "color_type": "orange",
+            "copyright": "This is some copyright",
+            "cost": "£0",
+            "date_created": "2014-10-12",
+            "display_sizes": [
+                {
+                    "height": 50,
+                    "is_watermarked": false,
+                    "name": "small",
+                    "uri": "img/two.jpg",
+                    "width": 25
+                },
+                {
+                    "height": 100,
+                    "is_watermarked": false,
+                    "name": "medium",
+                    "uri": " http://.....",
+                    "width": 50
+                },
+                {
+                    "height": 200,
+                    "is_watermarked": true,
+                    "name": "medium",
+                    "uri": "http://.....",
+                    "width": 100
+                }
+            ],
+            "keywords": [
+                {
+                    "keyword_id": "1",
+                    "type": "metadata",
+                    "text": "beach"
+                },
+                {
+                    "keyword_id": "2",
+                    "type": "metadata",
+                    "text": "ball"
+                }
+            ],
+            "max_dimensions": {
+                "height": 500,
+                "width": 300
+            },
+            "quality_rank": "1",
+            "additional_info": "Additional Info shows here..."
+        },
+        {
+            "id": "322",
+            "caption": "Red beach ball ...",
+            "title": "Kids Beach Ball",
+            "color_type": "orange",
+            "copyright": "This is some copyright",
+            "cost": "£0",
+            "date_created": "2014-10-12",
+            "display_sizes": [
+                {
+                    "height": 50,
+                    "is_watermarked": false,
+                    "name": "small",
+                    "uri": "img/two.jpg",
+                    "width": 25
+                },
+                {
+                    "height": 100,
+                    "is_watermarked": false,
+                    "name": "medium",
+                    "uri": " http://.....",
+                    "width": 50
+                },
+                {
+                    "height": 200,
+                    "is_watermarked": true,
+                    "name": "medium",
+                    "uri": "http://.....",
+                    "width": 100
+                }
+            ],
+            "keywords": [
+                {
+                    "keyword_id": "1",
+                    "type": "metadata",
+                    "text": "beach"
+                },
+                {
+                    "keyword_id": "2",
+                    "type": "metadata",
+                    "text": "ball"
+                }
+            ],
+            "max_dimensions": {
+                "height": 500,
+                "width": 300
+            },
+            "quality_rank": "1",
+            "additional_info": "Additional Info shows here..."
+        },
+         {
+            "id": "347",
+            "caption": "Red beach ball ...",
+            "title": "Kids Beach Ball",
+            "color_type": "orange",
+            "copyright": "This is some copyright",
+            "cost": "£0",
+            "date_created": "2014-10-12",
+            "display_sizes": [
+                {
+                    "height": 50,
+                    "is_watermarked": false,
+                    "name": "small",
+                    "uri": "img/Desert.jpg",
+                    "width": 25
+                },
+                {
+                    "height": 100,
+                    "is_watermarked": false,
+                    "name": "medium",
+                    "uri": " http://.....",
+                    "width": 50
+                },
+                {
+                    "height": 200,
+                    "is_watermarked": true,
+                    "name": "medium",
+                    "uri": "http://.....",
+                    "width": 100
+                }
+            ],
+            "keywords": [
+                {
+                    "keyword_id": "1",
+                    "type": "metadata",
+                    "text": "beach"
+                },
+                {
+                    "keyword_id": "2",
+                    "type": "metadata",
+                    "text": "ball"
+                }
+            ],
+            "max_dimensions": {
+                "height": 500,
+                "width": 300
+            },
+            "quality_rank": "1",
+            "additional_info": "Additional Info shows here..."
+        },
+         {
+            "id": "349",
+            "caption": "Red beach ball ...",
+            "title": "Kids Beach Ball",
+            "color_type": "orange",
+            "copyright": "This is some copyright",
+            "cost": "£0",
+            "date_created": "2014-10-12",
+            "display_sizes": [
+                {
+                    "height": 50,
+                    "is_watermarked": false,
+                    "name": "small",
+                    "uri": "img/Koala.jpg",
+                    "width": 25
+                },
+                {
+                    "height": 100,
+                    "is_watermarked": false,
+                    "name": "medium",
+                    "uri": " http://.....",
+                    "width": 50
+                },
+                {
+                    "height": 200,
+                    "is_watermarked": true,
+                    "name": "medium",
+                    "uri": "http://.....",
+                    "width": 100
+                }
+            ],
+            "keywords": [
+                {
+                    "keyword_id": "1",
+                    "type": "metadata",
+                    "text": "beach"
+                },
+                {
+                    "keyword_id": "2",
+                    "type": "metadata",
+                    "text": "ball"
+                }
+            ],
+            "max_dimensions": {
+                "height": 500,
+                "width": 300
+            },
+            "quality_rank": "1",
+            "additional_info": "Additional Info shows here..."
+        }
+		,
+         {
+            "id": "350",
+            "caption": "Red beach ball ...",
+            "title": "Kids Beach Ball",
+            "color_type": "orange",
+            "copyright": "This is some copyright",
+            "cost": "£0",
+            "date_created": "2014-10-12",
+            "display_sizes": [
+                {
+                    "height": 50,
+                    "is_watermarked": false,
+                    "name": "small",
+                    "uri": "img/Koala.jpg",
+                    "width": 25
+                },
+                {
+                    "height": 100,
+                    "is_watermarked": false,
+                    "name": "medium",
+                    "uri": " http://.....",
+                    "width": 50
+                },
+                {
+                    "height": 200,
+                    "is_watermarked": true,
+                    "name": "medium",
+                    "uri": "http://.....",
+                    "width": 100
+                }
+            ],
+            "keywords": [
+                {
+                    "keyword_id": "1",
+                    "type": "metadata",
+                    "text": "beach"
+                },
+                {
+                    "keyword_id": "2",
+                    "type": "metadata",
+                    "text": "ball"
+                }
+            ],
+            "max_dimensions": {
+                "height": 500,
+                "width": 300
+            },
+            "quality_rank": "1",
+            "additional_info": "Additional Info shows here..."
+        }
+			,
+         {
+            "id": "351",
+            "caption": "Red beach ball ...",
+            "title": "Kids Beach Ball",
+            "color_type": "orange",
+            "copyright": "This is some copyright",
+            "cost": "£0",
+            "date_created": "2014-10-12",
+            "display_sizes": [
+                {
+                    "height": 50,
+                    "is_watermarked": false,
+                    "name": "small",
+                    "uri": "img/Koala.jpg",
+                    "width": 25
+                },
+                {
+                    "height": 100,
+                    "is_watermarked": false,
+                    "name": "medium",
+                    "uri": " http://.....",
+                    "width": 50
+                },
+                {
+                    "height": 200,
+                    "is_watermarked": true,
+                    "name": "medium",
+                    "uri": "http://.....",
+                    "width": 100
+                }
+            ],
+            "keywords": [
+                {
+                    "keyword_id": "1",
+                    "type": "metadata",
+                    "text": "beach"
+                },
+                {
+                    "keyword_id": "2",
+                    "type": "metadata",
+                    "text": "ball"
+                }
+            ],
+            "max_dimensions": {
+                "height": 500,
+                "width": 300
+            },
+            "quality_rank": "1",
+            "additional_info": "Additional Info shows here..."
+        },
+         {
+            "id": "352",
+            "caption": "Red beach ball ...",
+            "title": "Kids Beach Ball",
+            "color_type": "orange",
+            "copyright": "This is some copyright",
+            "cost": "£0",
+            "date_created": "2014-10-12",
+            "display_sizes": [
+                {
+                    "height": 50,
+                    "is_watermarked": false,
+                    "name": "small",
+                    "uri": "img/Koala.jpg",
+                    "width": 25
+                },
+                {
+                    "height": 100,
+                    "is_watermarked": false,
+                    "name": "medium",
+                    "uri": " http://.....",
+                    "width": 50
+                },
+                {
+                    "height": 200,
+                    "is_watermarked": true,
+                    "name": "medium",
+                    "uri": "http://.....",
+                    "width": 100
+                }
+            ],
+            "keywords": [
+                {
+                    "keyword_id": "1",
+                    "type": "metadata",
+                    "text": "beach"
+                },
+                {
+                    "keyword_id": "2",
+                    "type": "metadata",
+                    "text": "ball"
+                }
+            ],
+            "max_dimensions": {
+                "height": 500,
+                "width": 300
+            },
+            "quality_rank": "1",
+            "additional_info": "Additional Info shows here..."
+        },
+         {
+            "id": "353",
+            "caption": "Red beach ball ...",
+            "title": "Kids Beach Ball",
+            "color_type": "orange",
+            "copyright": "This is some copyright",
+            "cost": "£0",
+            "date_created": "2014-10-12",
+            "display_sizes": [
+                {
+                    "height": 50,
+                    "is_watermarked": false,
+                    "name": "small",
+                    "uri": "img/Koala.jpg",
+                    "width": 25
+                },
+                {
+                    "height": 100,
+                    "is_watermarked": false,
+                    "name": "medium",
+                    "uri": " http://.....",
+                    "width": 50
+                },
+                {
+                    "height": 200,
+                    "is_watermarked": true,
+                    "name": "medium",
+                    "uri": "http://.....",
+                    "width": 100
+                }
+            ],
+            "keywords": [
+                {
+                    "keyword_id": "1",
+                    "type": "metadata",
+                    "text": "beach"
+                },
+                {
+                    "keyword_id": "2",
+                    "type": "metadata",
+                    "text": "ball"
+                }
+            ],
+            "max_dimensions": {
+                "height": 500,
+                "width": 300
+            },
+            "quality_rank": "1",
+            "additional_info": "Additional Info shows here..."
+		 },
+         {
+            "id": "354",
+            "caption": "Red beach ball ...",
+            "title": "Kids Beach Ball",
+            "color_type": "orange",
+            "copyright": "This is some copyright",
+            "cost": "£0",
+            "date_created": "2014-10-12",
+            "display_sizes": [
+                {
+                    "height": 50,
+                    "is_watermarked": false,
+                    "name": "small",
+                    "uri": "img/Koala.jpg",
+                    "width": 25
+                },
+                {
+                    "height": 100,
+                    "is_watermarked": false,
+                    "name": "medium",
+                    "uri": " http://.....",
+                    "width": 50
+                },
+                {
+                    "height": 200,
+                    "is_watermarked": true,
+                    "name": "medium",
+                    "uri": "http://.....",
+                    "width": 100
+                }
+            ],
+            "keywords": [
+                {
+                    "keyword_id": "1",
+                    "type": "metadata",
+                    "text": "beach"
+                },
+                {
+                    "keyword_id": "2",
+                    "type": "metadata",
+                    "text": "ball"
+                }
+            ],
+            "max_dimensions": {
+                "height": 500,
+                "width": 300
+            },
+            "quality_rank": "1",
+            "additional_info": "Additional Info shows here..."
+        },
+         {
+            "id": "355",
+            "caption": "Red beach ball ...",
+            "title": "Kids Beach Ball",
+            "color_type": "orange",
+            "copyright": "This is some copyright",
+            "cost": "£0",
+            "date_created": "2014-10-12",
+            "display_sizes": [
+                {
+                    "height": 50,
+                    "is_watermarked": false,
+                    "name": "small",
+                    "uri": "img/Koala.jpg",
+                    "width": 25
+                },
+                {
+                    "height": 100,
+                    "is_watermarked": false,
+                    "name": "medium",
+                    "uri": " http://.....",
+                    "width": 50
+                },
+                {
+                    "height": 200,
+                    "is_watermarked": true,
+                    "name": "medium",
+                    "uri": "http://.....",
+                    "width": 100
+                }
+            ],
+            "keywords": [
+                {
+                    "keyword_id": "1",
+                    "type": "metadata",
+                    "text": "beach"
+                },
+                {
+                    "keyword_id": "2",
+                    "type": "metadata",
+                    "text": "ball"
+                }
+            ],
+            "max_dimensions": {
+                "height": 500,
+                "width": 300
+            },
+            "quality_rank": "1",
+            "additional_info": "Additional Info shows here..."
+        }	,
+         {
+            "id": "356",
+            "caption": "Red beach ball ...",
+            "title": "Kids Beach Ball",
+            "color_type": "orange",
+            "copyright": "This is some copyright",
+            "cost": "£0",
+            "date_created": "2014-10-12",
+            "display_sizes": [
+                {
+                    "height": 50,
+                    "is_watermarked": false,
+                    "name": "small",
+                    "uri": "img/Koala.jpg",
+                    "width": 25
+                },
+                {
+                    "height": 100,
+                    "is_watermarked": false,
+                    "name": "medium",
+                    "uri": " http://.....",
+                    "width": 50
+                },
+                {
+                    "height": 200,
+                    "is_watermarked": true,
+                    "name": "medium",
+                    "uri": "http://.....",
+                    "width": 100
+                }
+            ],
+            "keywords": [
+                {
+                    "keyword_id": "1",
+                    "type": "metadata",
+                    "text": "beach"
+                },
+                {
+                    "keyword_id": "2",
+                    "type": "metadata",
+                    "text": "ball"
+                }
+            ],
+            "max_dimensions": {
+                "height": 500,
+                "width": 300
+            },
+            "quality_rank": "1",
+            "additional_info": "Additional Info shows here..."
+        },
+		{
+            "id": "357",
+            "caption": "Red beach ball ...",
+            "title": "Kids Beach Ball",
+            "color_type": "orange",
+            "copyright": "This is some copyright",
+            "cost": "£0",
+            "date_created": "2014-10-12",
+            "display_sizes": [
+                {
+                    "height": 50,
+                    "is_watermarked": false,
+                    "name": "small",
+                    "uri": "img/Koala.jpg",
+                    "width": 25
+                },
+                {
+                    "height": 100,
+                    "is_watermarked": false,
+                    "name": "medium",
+                    "uri": " http://.....",
+                    "width": 50
+                },
+                {
+                    "height": 200,
+                    "is_watermarked": true,
+                    "name": "medium",
+                    "uri": "http://.....",
+                    "width": 100
+                }
+            ],
+            "keywords": [
+                {
+                    "keyword_id": "1",
+                    "type": "metadata",
+                    "text": "beach"
+                },
+                {
+                    "keyword_id": "2",
+                    "type": "metadata",
+                    "text": "ball"
+                }
+            ],
+            "max_dimensions": {
+                "height": 500,
+                "width": 300
+            },
+            "quality_rank": "1",
+            "additional_info": "Additional Info shows here..."
+        },{
+            "id": "358",
+            "caption": "Red beach ball ...",
+            "title": "Kids Beach Ball",
+            "color_type": "orange",
+            "copyright": "This is some copyright",
+            "cost": "£0",
+            "date_created": "2014-10-12",
+            "display_sizes": [
+                {
+                    "height": 50,
+                    "is_watermarked": false,
+                    "name": "small",
+                    "uri": "img/Koala.jpg",
+                    "width": 25
+                },
+                {
+                    "height": 100,
+                    "is_watermarked": false,
+                    "name": "medium",
+                    "uri": " http://.....",
+                    "width": 50
+                },
+                {
+                    "height": 200,
+                    "is_watermarked": true,
+                    "name": "medium",
+                    "uri": "http://.....",
+                    "width": 100
+                }
+            ],
+            "keywords": [
+                {
+                    "keyword_id": "1",
+                    "type": "metadata",
+                    "text": "beach"
+                },
+                {
+                    "keyword_id": "2",
+                    "type": "metadata",
+                    "text": "ball"
+                }
+            ],
+            "max_dimensions": {
+                "height": 500,
+                "width": 300
+            },
+            "quality_rank": "1",
+            "additional_info": "Additional Info shows here..."
+        },
+		{
+            "id": "359",
+            "caption": "Red beach ball ...",
+            "title": "Kids Beach Ball",
+            "color_type": "orange",
+            "copyright": "This is some copyright",
+            "cost": "£0",
+            "date_created": "2014-10-12",
+            "display_sizes": [
+                {
+                    "height": 50,
+                    "is_watermarked": false,
+                    "name": "small",
+                    "uri": "img/Koala.jpg",
+                    "width": 25
+                },
+                {
+                    "height": 100,
+                    "is_watermarked": false,
+                    "name": "medium",
+                    "uri": " http://.....",
+                    "width": 50
+                },
+                {
+                    "height": 200,
+                    "is_watermarked": true,
+                    "name": "medium",
+                    "uri": "http://.....",
+                    "width": 100
+                }
+            ],
+            "keywords": [
+                {
+                    "keyword_id": "1",
+                    "type": "metadata",
+                    "text": "beach"
+                },
+                {
+                    "keyword_id": "2",
+                    "type": "metadata",
+                    "text": "ball"
+                }
+            ],
+            "max_dimensions": {
+                "height": 500,
+                "width": 300
+            },
+            "quality_rank": "1",
+            "additional_info": "Additional Info shows here..."
+        },
+		{
+            "id": "360",
+            "caption": "Red beach ball ...",
+            "title": "Kids Beach Ball",
+            "color_type": "orange",
+            "copyright": "This is some copyright",
+            "cost": "£0",
+            "date_created": "2014-10-12",
+            "display_sizes": [
+                {
+                    "height": 50,
+                    "is_watermarked": false,
+                    "name": "small",
+                    "uri": "img/Koala.jpg",
+                    "width": 25
+                },
+                {
+                    "height": 100,
+                    "is_watermarked": false,
+                    "name": "medium",
+                    "uri": " http://.....",
+                    "width": 50
+                },
+                {
+                    "height": 200,
+                    "is_watermarked": true,
+                    "name": "medium",
+                    "uri": "http://.....",
+                    "width": 100
+                }
+            ],
+            "keywords": [
+                {
+                    "keyword_id": "1",
+                    "type": "metadata",
+                    "text": "beach"
+                },
+                {
+                    "keyword_id": "2",
+                    "type": "metadata",
+                    "text": "ball"
+                }
+            ],
+            "max_dimensions": {
+                "height": 500,
+                "width": 300
+            },
+            "quality_rank": "1",
+            "additional_info": "Additional Info shows here..."
+        },
+		{
+            "id": "361",
+            "caption": "Black",
+            "title": "Black ball",
+            "color_type": "orange",
+            "copyright": "This is some copyright",
+            "cost": "£0",
+            "date_created": "2014-10-12",
+            "display_sizes": [
+                {
+                    "height": 50,
+                    "is_watermarked": false,
+                    "name": "small",
+                    "uri": "img/Koala.jpg",
+                    "width": 25
+                },
+                {
+                    "height": 100,
+                    "is_watermarked": false,
+                    "name": "medium",
+                    "uri": " http://.....",
+                    "width": 50
+                },
+                {
+                    "height": 200,
+                    "is_watermarked": true,
+                    "name": "medium",
+                    "uri": "http://.....",
+                    "width": 100
+                }
+            ],
+            "keywords": [
+                {
+                    "keyword_id": "1",
+                    "type": "metadata",
+                    "text": "beach"
+                },
+                {
+                    "keyword_id": "2",
+                    "type": "metadata",
+                    "text": "ball"
+                }
+            ],
+            "max_dimensions": {
+                "height": 500,
+                "width": 300
+            },
+            "quality_rank": "1",
+            "additional_info": "Additional Info shows here..."
+        },
+		{
+            "id": "362",
+            "caption": "Red beach ball ...",
+            "title": "Kids Beach Ball",
+            "color_type": "orange",
+            "copyright": "This is some copyright",
+            "cost": "£0",
+            "date_created": "2014-10-12",
+            "display_sizes": [
+                {
+                    "height": 50,
+                    "is_watermarked": false,
+                    "name": "small",
+                    "uri": "img/Koala.jpg",
+                    "width": 25
+                },
+                {
+                    "height": 100,
+                    "is_watermarked": false,
+                    "name": "medium",
+                    "uri": " http://.....",
+                    "width": 50
+                },
+                {
+                    "height": 200,
+                    "is_watermarked": true,
+                    "name": "medium",
+                    "uri": "http://.....",
+                    "width": 100
+                }
+            ],
+            "keywords": [
+                {
+                    "keyword_id": "1",
+                    "type": "metadata",
+                    "text": "beach"
+                },
+                {
+                    "keyword_id": "2",
+                    "type": "metadata",
+                    "text": "ball"
+                }
+            ],
+            "max_dimensions": {
+                "height": 500,
+                "width": 300
+            },
+            "quality_rank": "1",
+            "additional_info": "Additional Info shows here..."
+        },
+		{
+            "id": "363",
+            "caption": "Red beach ball ...",
+            "title": "Kids Beach Ball",
+            "color_type": "orange",
+            "copyright": "This is some copyright",
+            "cost": "£0",
+            "date_created": "2014-10-12",
+            "display_sizes": [
+                {
+                    "height": 50,
+                    "is_watermarked": false,
+                    "name": "small",
+                    "uri": "img/Koala.jpg",
+                    "width": 25
+                },
+                {
+                    "height": 100,
+                    "is_watermarked": false,
+                    "name": "medium",
+                    "uri": " http://.....",
+                    "width": 50
+                },
+                {
+                    "height": 200,
+                    "is_watermarked": true,
+                    "name": "medium",
+                    "uri": "http://.....",
+                    "width": 100
+                }
+            ],
+            "keywords": [
+                {
+                    "keyword_id": "1",
+                    "type": "metadata",
+                    "text": "beach"
+                },
+                {
+                    "keyword_id": "2",
+                    "type": "metadata",
+                    "text": "ball"
+                }
+            ],
+            "max_dimensions": {
+                "height": 500,
+                "width": 300
+            },
+            "quality_rank": "1",
+            "additional_info": "Additional Info shows here..."
+        }
+    ]
+}
+;
+
+
+
+
+  function dropset(){
+
+  var droppables = $(".box");
+
+//the overlapThreshold can be a percentage ("50%", for example, would only trigger when 50% or more of the surface area of either element overlaps) or a number of pixels (20 would only trigger when 20 pixels or more overlap), or 0 will trigger when any part of the two elements overlap.
+var overlapThreshold = "50%"; 
+
+//we'll call onDrop() when a Draggable is dropped on top of one of the "droppables", and it'll make it "flash" (blink opacity). Obviously you can do whatever you want in this function.
+function onDrop(dragged, dropped) {
+  console.log(dragged+dropped);
+ 
+  //TweenMax.fromTo(dropped, 0.1, {opacity:1}, {opacity:0, repeat:3, yoyo:true});
+}
+var p=$(".recycle-thumb");
+var q=$(".checkout");
+
+TweenLite.to(".box", 2, {x: 0+"px", y: 0 +"px"});
+var cont;
+Draggable.create(droppables, {
+
+  bounds:window,
+   throwProps:true,
+  onDrag: function(e) {
+    
+    var i = droppables.length;
+     while (--i > -1) {
+       if (this.hitTest(p, overlapThreshold)) {
+        
+          cont=0;
+        
+       } else {
+         cont=1;
+         
+       }
+       if (this.hitTest(q, overlapThreshold)) {
+        
+         contq=0;
+         
+        
+       } else {
+         
+         contq=1;
+       }
+
+       
+       /* ALTERNATE TEST: you can use the static Draggable.hitTest() method for even more flexibility, like passing in a mouse event to see if the mouse is overlapping with the element...
+       if (Draggable.hitTest(droppables[i], e) && droppables[i] !== this.target) {
+         $(droppables[i]).addClass("highlight");
+       } else {
+         $(droppables[i]).removeClass("highlight");
+       }
+       */
+    }
+  },
+  onDragEnd:function(e) {
+  	console.log("cont"+cont+"contq"+contq);
+  	    var p=(this._eventTarget.attributes.id.nodeValue)
+    if (cont==1 && contq==1)
+    {
+    TweenLite.to(this.target, 0.5, {x: 0+"px", y: 0 +"px"});
+    var p=(this._eventTarget.attributes['id'].nodeValue) 
+  
+    }
+    else if(cont==0 && contq==1)
+    {
+    console.log(p);
+    $("#"+p).remove();
+    singleload(p);
+    $("div.holder").jPages("destroy").jPages({
+      containerID   : "product-listing",
+      perPage       : 6
+      });
+    }
+   else if (cont==1 && contq==0)
+   {
+   	console.log("drop");
+   	$("#"+p).remove();
+    singleloadcheckout(p);
+    var val=$(".jp-current").html();
+    console.log("val ----------------"+val)
+    $("div.holder").jPages("destroy").jPages({
+      containerID   : "product-listing",
+      perPage       : 6
+      });
+   }
+  
+    
+  
+  }
+
+});
+}
+
+
+console.log(items);
+
+function initload(){
+$.each(items.images, function(idx,val) {
+  var itemid=val.id;
+    var itemtitle=val.title;
+    var itemcaption=val.caption;
+    var itemurl=val.display_sizes[0].uri;
+    console.log(itemtitle);
+  /* create div */
+
+var boxdiv=$("<div id='item"+itemid+"' class='box' ><input class='cross' onclick=cross("+itemid+"); type='image' value='cross' src='images/cross.png' class='cross'><div style='display:none' class='divtitle'>"+itemtitle+"</div><input type='button' onclick=addd("+itemid+"); value='add' class='add-button'> <p><img src="+itemurl+"><span><strong>Cost</strong>30$</span></p></div>");
+            $(".product-listing").append(boxdiv);
+        
+        
+
+    /* end of div create */
+
+
+
+})
+
+
+
+}
+
+
+window.singleload=function singleload(imgid)
+{
+  $.each(items.images, function(idx,val) {
+    if(imgid== 'item'+val.id)
+    {
+    var itemid=val.id;
+    var itemtitle=val.title;
+    var itemcaption=val.caption;
+    var itemurl=val.display_sizes[0].uri;
+    console.log(itemurl);
+    /* create div */
+    var boxdiv="<div id='item"+itemid+"' class='box1'><p><img src="+itemurl+"></p></div>";
+            $(".recycle-thumb").append(boxdiv);
+    /* end of div create */
+  }
+})
+
+}
+
+window.popupload=function popupload(imageid)
+{
+   $.each(items.images, function(idx,val) {
+    if(imageid== 'item'+val.id)
+    {
+    var itemid=val.id;
+    var itemtitle=val.title;
+    var itemcaption=val.caption;
+    var itemurl=val.display_sizes[0].uri;
+    console.log(itemurl);
+  /* create div */
+
+   var boxdiv=$("<div id='item"+itemid+"'  class='box popup'><span class='button b-close'><span>X</span></span><input class='cross' onclick=cross("+itemid+"); type='image' value='cross' src='images/cross.png' class='cross'><input type='button' onclick=addd("+itemid+"); value='add' class='add-button'> <p><img src="+itemurl+"><span><strong>Cost</strong>30$</span></p></div>");
+           console.log(boxdiv)
+           boxdiv.bPopup();
+         /* end of div create */
+  
+   }
+})
+
+}
+
+
+var countlist=1;
+window.singleloadcheckout=function singleloadcheckout(imgid)
+{
+  $.each(items.images, function(idx,val) {
+    if(imgid== 'item'+val.id)
+    {
+    var itemid=val.id;
+    var itemtitle=val.title;
+    var itemcaption=val.caption;
+    var itemurl=val.display_sizes[0].uri;
+    console.log(itemurl);
+    /* create div */
+    var boxdiv=" <tr class='odd'><td>"+countlist+"</td><td>"+itemtitle+"</td><td>"+itemcaption+"</td></tr>";
+            $("#checkoutlist tbody").append(boxdiv);
+            countlist++;
+    /* end of div create */
+  }
+})
+
+}
+
+
+
+
+
+
+
+initload();
+
+dropset();
+
+
+
+var dblc=0; 
+$(".box").each(function(){
+
+
+Hammer($('.box').get(dblc)).on('doubletap', function(event) {
+    console.log(event)
+    var dblitem=event.target.offsetParent.id;  
+    popupload(dblitem);
+    
+});
+ dblc++;
+})
+
+
+});
+
+
+function cross(itemcros)
+{
+  itemcros="item"+itemcros;
+ 
+  $("#"+itemcros).remove();
+  singleload(itemcros);
+  $(".b-close").click();
+  var val=$(".jp-current").html();
+    console.log("val ----------------"+val)
+    $("div.holder").jPages("destroy").jPages({
+      containerID   : "product-listing",
+      perPage       : 6
+      });
+   
+}
+
+
+
+function addd(itemad)
+{
+  itemad="item"+itemad;
+ 
+  $("#"+itemad).remove();
+  singleloadcheckout(itemad);
+  $(".b-close").click();
+  var val=$(".jp-current").html();
+    console.log("val ----------------"+val)
+    $("div.holder").jPages("destroy").jPages({
+      containerID   : "product-listing",
+      perPage       : 6
+      });
+}
+
+
+
+</script>
+<script>
+
+$(function(){
+
+	$(".search-butoon").click(function(){
+      console.log($(".search-for-image").val());
+		// Retrieve the input field text and reset the count to zero
+		var filter = $(".search-for-image").val(), count = 0;
+        filter=filter.toLowerCase();
+		// Loop through the comment list
+		$(".product-listing div").each(function(){
+
+			// If the list item does not contain the text phrase fade it out
+			var aa = $(this).find('.divtitle').html();
+			
+            if(aa !=null)
+            {aa=aa.toLowerCase();
+            console.log(aa)
+            aa=aa.toString();
+             var matches=aa.match(filter)
+             console.log(matches);
+           if (matches !=null)  {
+	      $(this).show();
+ 
+             } else {
+          	$(this).fadeOut();
+ 
+                  }
+			
+		}
+
+		});
+
+		// Update the count
+		$("div.holder").jPages("destroy").jPages({
+      containerID   : "product-listing",
+      perPage       : newPerPage
+      });
+    });
+		
+	});
+})
+
+
+
+$(function() {
+
+    /* initiate plugin */
+    $("div.holder").jPages({
+      containerID : "product-listing",
+      perPage : 6
+    });
+
+    /* on select change */
+    $("select").change(function(){
+      /* get new nº of items per page */
+    var newPerPage = parseInt( $(this).val() );
+
+      /* destroy jPages and initiate plugin again */
+    $("div.holder").jPages("destroy").jPages({
+      containerID   : "product-listing",
+      perPage       : newPerPage
+      });
+    });
+
+  });
+</script>
+<script src="minified/jquery.bpopup.js"></script>
